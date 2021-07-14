@@ -289,6 +289,9 @@ section{
 .live-match{
     flex-direction: column;
 }
+legend{
+    font-size: 20px;
+}
 
 .fourth-section .sponsor-container{
     grid-template-columns: repeat(1, 1fr);
