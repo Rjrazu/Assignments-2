@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -----------
+NAVBAR
+----------- */
+
+nav{
+width: 100%;
+height: 677px;
+background-color: #2D25A0;
+margin-bottom: 70px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar h2{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 35px;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    transition: font-size 0.5s linear;
+}
+.navbar a:hover{
+    font-size: 18px;
+    background-image: linear-gradient(tomato, crimson);
+    border-radius: 15px;
+}
+.navbar img{
+    width: 550px;
+    height: 430px;
+}
+
+
+/*--------
+ MAIN
+ ------ */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    width: 1052px;
+    margin-bottom: 165px;
+}
+
+/*--------------
+FIRST SECTION
+ ----------------*/
+
+.first-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 27px;   
+}
+.player{
+    width: 330px;
+    height: 480px;
+    border: 1px solid red;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid white;
+}
+.players img{
+    width: 100%;
+}
+.players h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    line-height: 18px;
+}
+.players p{
+font-size: 16px;
+color: #6C6C6C;
+}
+
+
+/*--------------
+ SECOND SECTION 
+ ----------------*/
+
+ .second-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .highlights{
+     display: flex;
+ }
+ .highlights h2{
+    font-size: 48px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #0A0826;
+}
+ .highlights a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #E02C6D;
+    padding: 10px 25px;
+ }
+ .highlights img{
+     width: 567px;
+     height: 427px;
+ }
+
+
+ /* ----------
+ THIRD SECTION
+ ----------- */
+
+ .third-section{
+     background-color: rgb(252, 248, 242);
+ }
+ legend{
+     text-align: center;
+     font-size: 30px;
+     font-weight: 600;
+     color: #0A0826;
+ }
+ .live-match{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     text-align: center;
+     padding: 50px;
+ }
+ .third-section img{
+     width: 200px;
+     height: 200px;
+ }
+ .third-section p{
+     font-size: 30px;
+     font-weight: 600;
+ }
+
+
+ /*---------------
+  FOURTH SECTION
+  ------------- */
+
+ .fourth-section .sponsors{
+    display: flex;
+    justify-content: space-evenly;
+ }
+.fourth-section h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.fourth-section .sponsor-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.fourth-section img{
+    width: 150px;
+    height: 150px;
+}
+
+
+ /*---------------
+  FOOTER SECTION
+  ---------------*/
+
+ .footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ .footer img{
+    Width: 484px;
+    Height: 110px;
+ }
+ .footer .fab{
+width: 17px;
+height: 17px;
+padding: 8px;
+background-color: lightgray;
+border: 1px solid lightgray;
+border-radius: 50%;
+margin-right: 14px;
+}
+.fa-facebook:hover {
+    color: white;
+    background-color: mediumslateblue;
+}
+.fa-instagram:hover {
+    color: white;
+    background-color: tomato;
+}
+.fa-linkedin:hover {
+    color: white;
+    background-color: blueviolet;
+}
+.fa-youtube:hover {
+    color: white;
+    background-color: red;
+}
+.footer .copyright{
+    color: #000000;
+    font-size: 18px;
+}
+
+
+
+
+/* ---------------------------
+Responsive For Mobile
+----------------------------- */
+
+@media screen and (max-width: 688px) {
+
+nav{
+    width: 100%;
+    margin-bottom: 47px;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.navbar h2{
+   font-size: 40px;
+
+}
+.navbar img{
+    width: 330px;
+    height: 259px;
+}
+section{
+    width: 100%;
+    margin-bottom: 55px;
+}
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.players{
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 24px;
+}
+
+.highlights{
+    flex-direction: column;
+    padding: 60px 15px 43px 16px;
+    
+}
+.highlights h2{
+    font-size: 35px;
+}
+.highlights img{
+    width: 300px;
+    height: 240px;
+    margin-top: 29px;
+}
+.live-match{
+    flex-direction: column;
+}
+
+.fourth-section .sponsor-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.footer img{
+    Width: 261px;
+    Height: 63px;
+
+}
+}
+
+/* ---------------------------
+ALLAH - HAFEEZ
+---------------------------- */
