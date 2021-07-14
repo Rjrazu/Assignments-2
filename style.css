@@ -361,7 +361,7 @@ section{
     margin-top: 20px;
 }
 .live-match{
-    flex-direction: column;
+    flex-direction: row;
 }
 legend{
     font-size: 25px;
